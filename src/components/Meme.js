@@ -1,20 +1,24 @@
-import React from "react"
+import React, {useState} from "react"
 import memesData from "../data/memesData"
 
 export default function Meme() {
 
     let url;
 
+    const [result, setResult] = React.useState(null)
+    
+ 
+
     function getMemeImage() {
         const memesArray = memesData.data.memes
         const randomNumber = Math.floor(Math.random() * memesArray.length)
         url = memesArray[randomNumber].url
-        console.log(url)
+        return setResult(url)
     }
 
     return (
         <main>
-            <p key={url}>{url}</p>
+            <p>{result}</p>
             <div className="form">
                 <input
                     type="text"
