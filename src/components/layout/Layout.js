@@ -7,10 +7,18 @@ const Layout = () => {
         <Header />
         <nav className='nav--bar'>
             <ul className='nav--links'>
-                    <Link to="/">Meme Generator</Link>
-            </ul>
-            <ul className='nav--links'>
-                    <Link to="/box">Box thing</Link>
+                <li>
+                    <Link className='nav--link' to="/">Meme Generator</Link>
+                </li>
+                <li>
+                    <Link className='nav--link' to="/box">State Example</Link>
+                </li>
+                <li>
+                    <Link className='nav--link' to='/joke'>Conditional Rendering</Link>
+                </li>
+                <li>
+                    <Link className='nav--link' to='/form'>Form Example</Link>
+                </li>
             </ul>
         </nav>
         <br /><br />

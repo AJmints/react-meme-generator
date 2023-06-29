@@ -33,17 +33,26 @@ main {
   display: flex;
   align-items: center;
   height: 40px;
-  background: linear-gradient(180deg, #A626D3 1.18%, #D5D4D8 100%);
+  background: linear-gradient(90deg, #A626D3 20.18%, #672280 100%);
   color: white;
   padding: 15px;
 }
 
-.nav--links {
-  font-size: 1.1rem;
-  margin: 0;
-  padding: 10px;
-  color: aliceblue;
+a {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
   font-family: "Karla", sans-serif;
+  font-size: .8rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 10px;
 }
 
 .header--image {
@@ -89,3 +98,25 @@ main {
   padding: 10px;
 }
 
+input[type="text"], input[type="email"] {
+  margin-bottom: 15px;
+  height: 30px;
+  text-indent: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: block;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  margin-right: 0.75rem;
+  display: inline;
+}
+
+textarea {
+  margin-bottom: 15px;
+  height: 60px;
+  text-indent: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: block;
+}
