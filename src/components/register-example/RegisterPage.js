@@ -9,6 +9,16 @@ export default function Register() {
         joinedNewsLetter: true
     })
 
+    const url = "http://localhost:8080"
+    const options = {
+        method: "POST",
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json;charset=UTF-8",
+        },
+        body: JSON.stringify(formData),
+    };
+
     function handleChange(event) {
         const {name, value, type, checked} = event.target
         setFormData(prevFormData => ({
@@ -21,7 +31,12 @@ export default function Register() {
         event.preventDefault() // This is required to prevent page refresh after submit
 
         if (formData.password === formData.passwordConfirm && formData.password.length > 0) {
-            console.log("Successful sign up!")
+            fetch(url + "/user/signup", options)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+            })
+
         } else {
             console.log("Please enter matching passwords")
             return
@@ -31,6 +46,9 @@ export default function Register() {
             console.log("Thank you for signing up to our news letter!")
         }
     }
+
+
+
     
     return (
         <div className="body-sign">
