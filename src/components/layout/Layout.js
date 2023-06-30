@@ -19,9 +19,17 @@ const Layout = () => {
                 <li>
                     <Link className='nav--link' to='/form'>Form Example</Link>
                 </li>
+                <li>
+                    <Link className='nav--link' to='/signup'>Sign up Example</Link>
+                </li>
+                <li>
+                    <Link className='nav--link' to='/useEffect'>useEffect Example</Link>
+                </li>
+                <li>
+                    <Link className='nav-link' to='/stateEffect'>State and Effects Example</Link>
+                </li>
             </ul>
         </nav>
-        <br /><br />
 
         <Outlet />
     </>

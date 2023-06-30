@@ -38,6 +38,7 @@ export default function Form() {
 
     return (
         <form onSubmit={handleSubmit}>
+            <br /><br />
             <input
                 type="text"
                 placeholder="First Name"

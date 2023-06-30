@@ -47,6 +47,7 @@ export default function BoxApp(props) {
 
   return (
     <>
+    <br /><br />
         {squareElements}
     </>
   )

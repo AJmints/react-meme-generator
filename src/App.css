@@ -32,7 +32,7 @@ main {
 .nav--bar {
   display: flex;
   align-items: center;
-  height: 40px;
+  height: 60px;
   background: linear-gradient(90deg, #A626D3 20.18%, #672280 100%);
   color: white;
   padding: 15px;
@@ -96,6 +96,46 @@ li {
 .meme--image {
   max-width: 100%;
   padding: 10px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.meme {
+  position: relative;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
 
 input[type="text"], input[type="email"] {
@@ -119,4 +159,77 @@ textarea {
   border: 1px solid #444;
   border-radius: 5px;
   display: block;
+}
+
+.form-container-sign {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-sign {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+}
+
+.form--input-sign {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding: 5px;
+  font-family: 'Inter', sans-serif;
+}
+
+.form--submit-sign {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #639;
+  border: none;   
+  cursor: pointer; 
+}
+
+.form--marketing-sign {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.form--marketing-sign > input {
+  margin-right: 10px;
+}
+
+.body-sign {
+  margin: 0;
+  background-color: #639;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.state-effect {
+  text-align: center;
+  /* background-color: #FF7C43;
+    color: white; */
+    margin: 0;
+    padding: 2rem;
+    /* background-color: #FF7C43; */
+    /* color: white; */
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
 }
