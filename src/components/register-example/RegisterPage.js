@@ -53,6 +53,7 @@ export default function Register() {
     return (
         <div className="body-sign">
         <div className="form-container-sign">
+            <p>Must set up the backend for this example to work</p>
             <form className="form-sign" onSubmit={handleSubmit}>
                 <input 
                     type="email" 
